@@ -48,7 +48,8 @@ def read_data(path='./data/exp02/'):
 
 
 def main(data):
-    x, y = read_data()
+    x = read_data()[0]
+    y = read_data()[1]
     weight1 = ridge(x, y)
     #weight2 = lasso(x, y)
     return weight1
